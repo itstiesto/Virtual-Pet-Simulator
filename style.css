@@ -85,7 +85,7 @@ Game Elements
 }
 
 .container{
-    display: grid;
+    display: flex;
     padding: 30px;
     justify-content: space-around;
     max-width: none !important;
