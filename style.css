@@ -1,0 +1,148 @@
+/*-----------------
+Fonts
+------------------*/
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+
+/*-----------------
+Animation
+------------------*/
+@keyframes sway {
+    from {transform: skewX(-2deg) translateX(2px)}
+    to {transform: skewX(2deg) translateX(-2px)}
+}
+
+@keyframes bubble {
+    from {opacity: 1; transform: translateY(0);}
+    to {opacity: 0; transform: translateY(-10px);}
+}
+
+/*-----------------
+Layout
+------------------*/
+html, body{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+}
+
+body{
+    background-image: url('images/sakura.png');
+    background-repeat: repeat;
+    font-family: 'Press Start 2P' !important;
+}
+
+.wrapper{
+    width: 1280px; 
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}        
+
+/*-----------------
+Typography
+------------------*/
+h1{
+    color: #fff;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 4px 4px 0px black;
+}
+
+/*-----------------
+Game Elements
+------------------*/
+
+#ingame{
+    width: 1280px;
+    height: 910px;
+    background: url('images/bg.gif');
+    position: absolute;
+    border: 15px solid #fff;
+    margin: 10px 0px;
+}
+
+.sprite{
+    position: absolute;
+    top: 580px;
+    left: 560px;
+}
+
+.bubble{
+    animation-name: bubble;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+#pet{
+    animation-name: sway;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.container{
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    max-width: none !important;
+}
+
+#notify{
+    margin-top: 350px;
+    text-align: center;
+}
+
+#bars-container{
+    
+}
+
+.bar-container{
+    min-width: 210px;
+    padding: 20px;
+    background: #fff;
+    outline: 2px solid #000;
+    box-shadow: 4px 4px 0px black;
+}
+
+.bar{
+    background: #81F781;
+    height: 15px;
+    border-bottom: 5px solid rgb(90, 184, 90); 
+}
+
+#btn-container{
+    position: absolute;
+    bottom: 0;
+}
+
+.btn{
+    padding: 10px 20px !important;
+    border-radius: 0 !important;
+    border: 10px solid #fff !important;
+    outline: 2px solid #000;
+    box-shadow: 4px 4px 0px black;
+}
+
+#hunger{
+    border: 10px solid #218838;
+    color: #218838;
+}
+
+#fun{
+    border: 10px solid #007bff;
+    color: #007bff;
+}
+
+#hygiene{
+    border: 10px solid #138496;
+    color: #138496;
+}
+
+#energy{
+    border: 10px solid #e0a800;
+    color: #e0a800;
+}
