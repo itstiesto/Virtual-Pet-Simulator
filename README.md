@@ -2,7 +2,7 @@
 
 Overview 🌐
 
-Pet Simulator is a dynamic and engaging web-based game, crafted during my tenure at Unified Mentor. It offers players a unique virtual pet experience, balancing fun with the nuances of pet care.
+Pet Simulator is a dynamic and engaging web-based game, crafted during my ongoing internship at Unified Mentor. It offers players a unique virtual pet experience, balancing fun with the nuances of pet care.
 
 # <h2>What's Inside 🎨</h2> 
 
